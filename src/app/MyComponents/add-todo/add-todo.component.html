@@ -1,0 +1,18 @@
+<div class="shadow-lg p-3 mb-5 bg-white rounded mt-5">
+  <div class="shadow-sm p-1 bg-secondary rounded"><h2 class="text-center text-light mb -3">Add ToDo</h2> </div>
+  <form>
+      <div class="form-group my-2">
+        <label for="title"><h6>ToDo</h6> <Title></Title></label>
+        <input type="text" [(ngModel)]= "title" class="form-control" name="title" id="title" autocomplete="true"
+        placeholder="Title of To-Do">
+      </div>
+      <div class="form-group my-2">
+        <label for="desc"><h6>Description</h6></label>
+        <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]= "desc" autocomplete="true"
+        placeholder="Description of To-Do">
+      </div>
+      <button type="submit" class="btn btn-sm btn-primary mx-1 my-2" (click)="onSubmit()">Add ToDo</button>
+      
+      <button type="button" class="btn btn-sm btn-danger mx-2 my-2" (click)="onClickClear()">Clear</button>
+    </form>
+</div>
